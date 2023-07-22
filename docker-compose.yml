@@ -1,0 +1,12 @@
+version: '3'
+services:
+  webapp:
+    image: app:v1
+    container_name: test
+    ports:
+      - "80:80"
+    volumes:
+      - /home/ubuntu/docker-day10/data:/var/www/html
+volumes:
+  data:
+    name: voltas  
